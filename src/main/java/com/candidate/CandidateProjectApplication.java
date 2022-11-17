@@ -10,4 +10,14 @@ public class CandidateProjectApplication {
 		SpringApplication.run(CandidateProjectApplication.class, args);
 	}
 
+	//create global utc date format
+	public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+
+
+	//create password encode method for password
+	public static String encodePassword(String password) {
+        return new String(password.getBytes());
+    }
+
+
 }
