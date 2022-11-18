@@ -20,27 +20,22 @@ public class ResourceController {
     public String createResource(@RequestBody ResourceDTO resource){
         return service.createResource(resource);
     }
-
     @PutMapping("/update_resource")
     public String updateResource(@RequestBody ResourceDTO resource) {
         return service.updateResource(resource);
     }
-
     @DeleteMapping("/delete_resource/{id}")
     public String deleteResource(@PathVariable("id") Long id){
         return service.deleteResource(id);
     }
-
     @DeleteMapping("/delete_resource_all")
     public String deleteResourceAll(){
         return service.deleteResourceAll();
     }
-
     @GetMapping("/get_resource/{id}")
     public Optional<Resource> getResource(@PathVariable("id") Long id){
         return service.getResource(id);
     }
-
     @GetMapping("/get_resource_all")
     public List<Resource> getResourceList(){
         return service.getResourceList();

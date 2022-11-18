@@ -1,5 +1,7 @@
 package com.candidate.dto;
 
+import com.candidate.entity.ResourceType;
+import com.candidate.entity.Role;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,5 +14,7 @@ public class ResourceDTO {
     private String lastName;
     private String email;
     private String phone;
-    private Boolean status;
+    private Boolean active=false;
+    private Role role;
+    private ResourceType resourceType;
 }
